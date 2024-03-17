@@ -1,3 +1,5 @@
+const { addDynamicIconSelectors } = require("@iconify/tailwind");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -7,12 +9,17 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      screens: {
+        xla: "1366px",
+        lga: "1152px",
+        mda: "960px",
+        mdb: "720px",
+        sma: "540px",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    /** Iconify plugin */
+    addDynamicIconSelectors(),
+  ],
 };
