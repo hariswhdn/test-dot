@@ -112,22 +112,22 @@ const Card = ({ isRecommendation, data, className }) => {
             <li>
               <span className="icon-[material-symbols--width]"></span>
               <p>Dmnsi Tanah</p>
-              <p>{data.dimensiTanah}</p>
+              <p>{data.spesification.dimensiTanah}</p>
             </li>
             <li>
               <span className="icon-[mdi--house-swap-outline]"></span>
               <p>Luas Bangnn</p>
-              <p>{data.luasBangunan}</p>
+              <p>{data.spesification.luasBangunan}</p>
             </li>
             <li>
               <span className="icon-[ph--stairs]"></span>
               <p>Lantai</p>
-              <p>{data.lantai}</p>
+              <p>{data.spesification.lantai}</p>
             </li>
             <li>
               <span className="icon-[material-symbols--bedroom-parent-outline]"></span>
               <p>Kmr Tidur</p>
-              <p>{data.kamarTidur}</p>
+              <p>{data.spesification.kamarTidur}</p>
             </li>
           </ul>
           <div className="flex flex-col gap-y-4">
